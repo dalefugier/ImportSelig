@@ -1,6 +1,4 @@
 ﻿using Rhino.PlugIns;
-using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // Plug-in Description Attributes - all of these are optional.
@@ -11,8 +9,8 @@ using System.Runtime.InteropServices;
 [assembly: PlugInDescription(DescriptionType.Phone, "(206) 545-7000")]
 [assembly: PlugInDescription(DescriptionType.Fax, "(206) 545-7321")]
 [assembly: PlugInDescription(DescriptionType.Organization, "Robert McNeel & Associates")]
-[assembly: PlugInDescription(DescriptionType.UpdateUrl, "")]
-[assembly: PlugInDescription(DescriptionType.WebSite, "")]
+[assembly: PlugInDescription(DescriptionType.UpdateUrl, "https://github.com/dalefugier/ImportSelig")]
+[assembly: PlugInDescription(DescriptionType.WebSite, "https://github.com/dalefugier/ImportSelig")]
 
 // Icons should be Windows .ico files and contain 32-bit images in the following sizes: 16, 24, 32, 48, and 256.
 [assembly: PlugInDescription(DescriptionType.Icon, "ImportSelig.EmbeddedResources.plugin-import.ico")]

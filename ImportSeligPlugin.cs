@@ -48,18 +48,29 @@ namespace ImportSelig
       bool rc = false;
       try
       {
+        // Selig Airfoil data files are just text files.
+        // The first line in the file should contain the name of the airfoil.
+        // The rest of the lines should contain two space-delimited coordinates.
+        // We treat these coordinates as x, z.
+
         var lines = File.ReadAllLines(filename);
-        if (null != lines && lines.Length > 2)
+        if (null != lines && lines.Length > 4)
         {
-          var name = lines[0].Trim();
+          var name = string.Empty;
           var points = new List<Point3d>();
           var delimiters = new char[] { ' ', '\t' };
 
-          for (var i = 1; i <lines.Length; i++)
+          for (var i = 0; i < lines.Length; i++)
           {
             var line = lines[i].Trim();
             if (string.IsNullOrEmpty(line))
               continue;
+
+            if (string.IsNullOrEmpty(name))
+            {
+              name = line;
+              continue;
+            }
 
             var elements = line.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
             if (null == elements || 2 != elements.Length)
@@ -72,7 +83,7 @@ namespace ImportSelig
             }
           }
 
-          if (points.Count > 2)
+          if (points.Count > 3)
           {
             var curve = Curve.CreateInterpolatedCurve(points, 3);
             if (null != curve)
