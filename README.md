@@ -1,6 +1,8 @@
 # ImportSelig
 Sample RhinoCommon plug-in that demonstrates how to import Selig airfoil data.
 
+For details on Selig airfoil data and [sample data files](https://m-selig.ae.illinois.edu/ads/coord_database.html), visit the [UIUC Airfoil Data Site](https://m-selig.ae.illinois.edu/ads.html).
+
 ### Prerequisites
 
 The following tool is required to build ImportSelig:
