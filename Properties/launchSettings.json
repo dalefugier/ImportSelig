@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Rhino 9": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\Rhino 9\\System\\Rhino.exe",
+      "commandLineArgs": ""
+    }
+  }
+}

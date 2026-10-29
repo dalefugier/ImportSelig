@@ -1,26 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net48</TargetFramework>
-    <Version>1.0</Version>
+    <TargetFramework>net10.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <RhinoCommonVersion>9.0.26300.9401</RhinoCommonVersion>
+    <Version>$(RhinoCommonVersion)</Version>
     <Title>ImportSelig</Title>
     <Description>Import Selig Airfoil Data</Description>
     <TargetExt>.rhp</TargetExt>
-    <Copyright>Copyright (c) 2022, Robert McNeel &amp; Associates</Copyright>
+    <Copyright>Copyright (c) 2022-2026, Dale Fugier</Copyright>
   </PropertyGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="EmbeddedResources\**\*" />
   </ItemGroup>
-  
   <ItemGroup>
-    <PackageReference Include="RhinoCommon" Version="7.13.21348.13001" IncludeAssets="compile;build" />
+    <PackageReference Include="RhinoCommon" Version="$(RhinoCommonVersion)" IncludeAssets="compile;build" />
   </ItemGroup>
-  
-  <PropertyGroup Condition="$(Configuration) == 'Debug' AND $([MSBuild]::IsOSPlatform(Windows))">
-    <StartProgram>C:\Program Files\Rhino 7\System\Rhino.exe</StartProgram>
-    <StartArguments></StartArguments>
-    <StartAction>Program</StartAction>
-  </PropertyGroup>
-  
 </Project>
