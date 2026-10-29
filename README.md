@@ -1,5 +1,7 @@
 # ImportSelig
-Sample RhinoCommon plug-in that demonstrates how to import Selig airfoil data.
+ImportSelig is a Rhino file import plug-in that imports Selig-formatted airfoil data.
+
+ImportSelig is available in Rhino via the [PackageManager](https://www.rhino3d.com/features/package-manager/).
 
 For details on Selig airfoil data and [sample data files](https://m-selig.ae.illinois.edu/ads/coord_database.html), visit the [UIUC Airfoil Data Site](https://m-selig.ae.illinois.edu/ads.html).
 
