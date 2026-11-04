@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // These will show in Rhino's option dialog, in the tab Plug-ins.
 [assembly: PlugInDescription(DescriptionType.Address, "146 North Canal St, Suite 320\r\nSeattle, WA 98103")]
 [assembly: PlugInDescription(DescriptionType.Country, "United States")]
-[assembly: PlugInDescription(DescriptionType.Email, "dale@mcneel.com")]
-[assembly: PlugInDescription(DescriptionType.Phone, "(206) 545-7000")]
-[assembly: PlugInDescription(DescriptionType.Fax, "(206) 545-7321")]
+[assembly: PlugInDescription(DescriptionType.Email, "tech@mcneel.com")]
+[assembly: PlugInDescription(DescriptionType.Phone, "206-545-6877")]
+[assembly: PlugInDescription(DescriptionType.Fax, "206-545-7321")]
 [assembly: PlugInDescription(DescriptionType.Organization, "Robert McNeel & Associates")]
-[assembly: PlugInDescription(DescriptionType.UpdateUrl, "https://github.com/dalefugier/ImportSelig")]
-[assembly: PlugInDescription(DescriptionType.WebSite, "https://github.com/dalefugier/ImportSelig")]
+[assembly: PlugInDescription(DescriptionType.UpdateUrl, "https://www.rhino3d.com")]
+[assembly: PlugInDescription(DescriptionType.WebSite, "https://www.rhino3d.com")]
 
 // Icons should be Windows .ico files and contain 32-bit images in the following sizes: 16, 24, 32, 48, and 256.
 [assembly: PlugInDescription(DescriptionType.Icon, "ImportSelig.EmbeddedResources.plugin-import.ico")]
